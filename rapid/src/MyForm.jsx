@@ -90,12 +90,13 @@ export default function MyForm() {
               <FormLabel>Message</FormLabel>
               <Textarea
                 onChange={(e) => setMessage(e.target.value)}
+                
                 placeholder="Enter your message here..."
               />
             </FormControl>
 
             {/* Dropdowns remain the same with unique id attributes */}
-            <FormControl>
+            <FormControl id="text">
               <FormLabel>Dropdown1</FormLabel>
               <Select
                 value={dropdown1}
@@ -107,7 +108,7 @@ export default function MyForm() {
               </Select>
             </FormControl>
 
-            <FormControl>
+            <FormControl id="text">
               <FormLabel>Dropdown2</FormLabel>
               <Select
                 value={dropdown2}
